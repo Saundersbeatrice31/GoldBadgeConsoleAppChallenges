@@ -62,28 +62,24 @@ namespace ClaimsUI
         {
             Console.Clear();
             Queue<Claims> queueOfClaims = _contentRepo.GetClaimsContentQueue();
+            Console.WriteLine("{0,-10} {1,6}    {2,-25}  {3,-12} {4,15} {5,12}", "ClaimID", "Type", "Description", "ClaimAmout", "DateOfIncident", "DateOfClaim");
             //Loop through the claims
             foreach (Claims content in queueOfClaims)
             {
-                Console.WriteLine($"ClaimID:{content.ClaimsId}\n" +
-                    $"Type:{content.ClaimType}\n" +
-                    $"Description:{content.Description}\n" +
-                    $"Amount:{content.ClaimAmount}\n" +
-                    $"DateOFAccident{content.DateOfIncident}\n" +
-                    $"DateOfClaim:{content.DateOfClaim}");                    
+                Console.WriteLine("{0,-10} {1,6}   {2,25}  ${3, -12:N2} {4,-15} {5,-15} ",content.ClaimsId,content.ClaimType,content.Description,content.ClaimAmount,content.DateOfIncident.ToString("g"),content.DateOfClaim.ToString("g"));                                                                
             }
         }
         private void NextClaim()
         {
             Queue<Claims> queueOfClaims = _contentRepo.GetClaimsContentQueue();
             Claims nextClaim = queueOfClaims.Peek();                       
-                Console.WriteLine($"ClaimID    :     {nextClaim.ClaimsId}\n" +
-                    $"Type:{nextClaim.ClaimType}\n" +
-                    $"Description:{nextClaim.Description}\n" +
-                    $"Amount:{nextClaim.ClaimAmount}\n" +
-                    $"DateOFAccident{nextClaim.DateOfIncident}\n" +
-                    $"DateOfClaim:{nextClaim.DateOfClaim}\n" +
-                    $"IsValid:{nextClaim.IsValid}");
+                Console.WriteLine($"ClaimID:  {nextClaim.ClaimsId}\n" +
+                    $"Type:  {nextClaim.ClaimType}\n" +
+                    $"Description:  {nextClaim.Description}\n" +
+                    $"Amount:  {nextClaim.ClaimAmount}\n" +
+                    $"DateOFAccident:  {nextClaim.DateOfIncident}\n" +
+                    $"DateOfClaim:  {nextClaim.DateOfClaim}\n" +
+                    $"IsValid:  {nextClaim.IsValid}");
                 Console.WriteLine("Do you want to deal with this claim now(y / n)?");
             string input =Console.ReadLine();
             if (input.ToLower() == "y")
