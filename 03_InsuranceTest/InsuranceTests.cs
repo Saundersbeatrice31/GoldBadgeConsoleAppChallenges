@@ -67,7 +67,7 @@ namespace _03_InsuranceTest
 
         }
         [TestMethod]
-        public void GetBadgeByID_ShouldReturnCorrectBadge() //Read
+        public void GetBadgeByID_ShouldReturnCorrectBadge() 
         {
             //Arrange
             KInsurance badge = new KInsurance(001, new List<string> { "A1", "A2" });
