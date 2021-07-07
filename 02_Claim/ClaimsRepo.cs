@@ -12,7 +12,7 @@ namespace _02_Claim
         //FakeDatabase
         private Queue<Claims> _queueOfClaims = new Queue<Claims>();
         //Create
-        public void AddClaimsToQueue (Claims content)
+        public void AddClaimsToQueue(Claims content)
         {
             _queueOfClaims.Enqueue(content);
         }
@@ -35,8 +35,8 @@ namespace _02_Claim
                 existingClaim.ClaimsId = newClaim.ClaimsId;
                 existingClaim.DateOfClaim = newClaim.DateOfClaim;
                 existingClaim.Description = newClaim.Description;
-                existingClaim.DateOfIncident = newClaim.DateOfIncident;                
-                return true;                
+                existingClaim.DateOfIncident = newClaim.DateOfIncident;
+                return true;
             }
             else
             {
@@ -46,14 +46,14 @@ namespace _02_Claim
         //Delete
         public void RemoveClaimsFromQueue()
         {
-            _queueOfClaims.Dequeue();           
+            _queueOfClaims.Dequeue();
         }
         //helper Method
-        public Claims GetByClaimType (string claimType)
+        public Claims GetByClaimType(string claimType)
         {
             foreach (Claims content in _queueOfClaims)
             {
-                if (content.ClaimType.ToLower()== claimType.ToLower())
+                if (content.ClaimType.ToLower() == claimType.ToLower())
                 {
                     return content;
                 }
