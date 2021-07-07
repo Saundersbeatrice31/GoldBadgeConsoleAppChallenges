@@ -132,7 +132,6 @@ namespace _01_CafeUI
             else
             {
                 Console.WriteLine("There are no meals by that name.");
-
             }
         }
         //Delete Existing Meals from the menu
@@ -161,8 +160,8 @@ namespace _01_CafeUI
         //Seed Method
         private void SeedMealList()
         {
-            Menu ravioli = new Menu(2,"Ravioli", "An Italian dumpling that's typically stuffed with ricotta, meat, cheese, and vegetables.",25.99,IngredientsList.Cheese);
-            Menu pasta = new Menu(2, "Pasta", "An Italian dumpling that's typically stuffed with ricotta, meat, cheese, and vegetables.", 25.99, IngredientsList.Cheese);
+            Menu ravioli = new Menu(3,"Ravioli", "An Italian dumpling that's typically stuffed with ricotta, meat, cheese, and vegetables.",25.99,IngredientsList.Cheese);
+            Menu pasta = new Menu(5, "Pasta", "An Italian dumpling that's typically stuffed with ricotta, meat, cheese, and vegetables.", 25.99, IngredientsList.Cheese);
             Menu lasagna = new Menu(2, "Lasagna", "An Italian dumpling that's typically stuffed with ricotta, meat, cheese, and vegetables.", 25.99, IngredientsList.Cheese);
 
             _mealRepo.AddMealsToList(ravioli);

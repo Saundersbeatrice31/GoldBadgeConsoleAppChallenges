@@ -113,7 +113,6 @@ namespace _03_InsuranceUI
                 bool loop = true;
                 while (loop)
                 {
-
                     Console.Clear();                                        
                     string doorsResult = string.Join(",", badgeToUpdate.DoorNames);
                     Console.WriteLine($"Badge #{badgeToUpdate.BadgeId} has access to doors: {doorsResult}.");
@@ -150,7 +149,6 @@ namespace _03_InsuranceUI
                             loop = false;
                             break;
                     }
-
                 }
                 bool wasUpdate = _contentRepo.UpdateExistingBadge(badgeId, badgeToUpdate);
                 if (wasUpdate == true)
@@ -161,7 +159,6 @@ namespace _03_InsuranceUI
                 {
                     Console.WriteLine("Badge was not successfully updated.  Please try update again.");
                 }
-
             }
             else
             {
@@ -170,7 +167,6 @@ namespace _03_InsuranceUI
             }
             Console.WriteLine("Press any key to return to the main menu");
             Console.ReadKey();
-
         }
         public void DeleteExistingBadges()
         {
@@ -198,7 +194,6 @@ namespace _03_InsuranceUI
                     {
                         Console.WriteLine("Badge was not removed.  Please try update again.");
                     }
-
                 }
                 else
                 {
@@ -212,7 +207,6 @@ namespace _03_InsuranceUI
             }
             Console.WriteLine("Press any key to return to the main menu");           
         }
-
         public void DisplayAllBadges()
         {
             Console.Clear();                        
@@ -235,18 +229,12 @@ namespace _03_InsuranceUI
             KInsurance badge4 = new KInsurance(545, new List<string> { "A4", "A5" });
             KInsurance badge5 = new KInsurance(645, new List<string> { "A4", "A5" });
 
-
             _contentRepo.AddBadge(badge1);
             _contentRepo.AddBadge(badge2);
             _contentRepo.AddBadge(badge3);
             _contentRepo.AddBadge(badge4);
             _contentRepo.AddBadge(badge5);
-
-
         }
-
-
     }
-
 }
 

@@ -47,7 +47,6 @@ namespace _03_Insurance
             }
             else { return false; }
         }
-
         public bool AddBadge(KInsurance badge)
         {
             int startingCount = _dictionaryOfBadges.Count;

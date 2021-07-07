@@ -33,7 +33,6 @@ namespace _01_CafeTest
 
             //Assert--Use the assert class to verify the expected outcome  
             Assert.IsNotNull(mealsFromMenuList);
-
         }
         [TestMethod]
         public void DeleteMeals_ShouldReturnTrue()

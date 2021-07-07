@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace _03_Insurance
-{
-   
+{   
     public class KInsurance
     {
         public int BadgeId { get; set; }

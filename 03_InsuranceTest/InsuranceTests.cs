@@ -30,8 +30,6 @@ namespace _03_InsuranceTest
 
             //Assert
             Assert.IsTrue(addResult);
-
-
         }
         [TestMethod]
         public void DisplayAllBagdes_ShouldReturnCorrectCollection() 
@@ -50,7 +48,6 @@ namespace _03_InsuranceTest
             Assert.IsTrue(hasBadges);
         }
         [TestMethod]
-
         public void UpdatingExistingClaims_ShouldReturnTrue()
         {
             //Arrange
@@ -64,7 +61,6 @@ namespace _03_InsuranceTest
 
             //Assert
             Assert.IsTrue(updateResult);
-
         }
         [TestMethod]
         public void GetBadgeByID_ShouldReturnCorrectBadge() 
@@ -96,7 +92,6 @@ namespace _03_InsuranceTest
 
             //Assert
             Assert.IsTrue(removeResult);
-
         }
     }
 }

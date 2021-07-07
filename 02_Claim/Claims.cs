@@ -5,9 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace _02_Claim
-{
-    
-        
+{            
     public class Claims
     {
         //Plain Old C# Object --POCO
@@ -34,8 +32,7 @@ namespace _02_Claim
             Description = description;
             ClaimAmount = claimAmount;
             DateOfIncident = dateOfIncident;
-            DateOfClaim = dateOFClaim;
-            
+            DateOfClaim = dateOFClaim;            
         }
         public bool ReturnIsValid()
         {
@@ -48,7 +45,6 @@ namespace _02_Claim
             {
                 return false;
             }
-
         }
 
     }

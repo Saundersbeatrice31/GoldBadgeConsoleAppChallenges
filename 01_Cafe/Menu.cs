@@ -11,7 +11,8 @@ namespace _01_Cafe
         Pasta = 1,
         Spagetti_Sauce,
         Cheese,
-        Spices
+        Spices,
+        potatoes        
     }
     public class Menu
     {
@@ -31,9 +32,6 @@ namespace _01_Cafe
             Description = description;
             Price = price;
             ListOfIngredients = ingredients;
-
-
         }
-    }
-    
+    }    
 }
