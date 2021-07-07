@@ -9,6 +9,7 @@ namespace ClaimsUI
 {
     public class ProgramUI
     {
+        string test = "test";
         private ClaimsRepo _contentRepo = new ClaimsRepo();
         public void Run()
         {

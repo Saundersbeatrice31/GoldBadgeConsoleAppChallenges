@@ -8,6 +8,7 @@ namespace ClaimsTest
     [TestClass]
     public class ClaimsTest
     {
+        string test = "test";
         private ClaimsRepo _repo;
         private Claims _content;
         [TestInitialize]
