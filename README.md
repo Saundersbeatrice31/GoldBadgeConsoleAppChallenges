@@ -11,7 +11,7 @@ Open the GoldBadgeChallenges Solution in Microsoft Visual Studio and each projec
 
 This App has a list of menu items for Komodo cafe. Allows the manager to be able to create new menu items, delete menu items, and receive a list of all items on the cafe's menu. 
 
-# Kimodo claims
+# Komodo claims
 
 This app allows claim agents to see all claims in the queue, work on the next claim and enter new claims.
 
